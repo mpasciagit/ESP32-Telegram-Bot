@@ -1,0 +1,52 @@
+# --- ESP-IDF Specific ---
+build/
+**/build/
+sdkconfig.old
+*.bin
+*.elf
+*.map
+flasher_args.json
+
+# --- Dependencies ---
+# Ignoramos componentes descargados automáticamente por el gestor
+managed_components/
+.espressif/
+dependencies.lock
+
+# --- Temporary & Log Files ---
+*.log
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Build Artifacts ---
+*.o
+*.a
+*.out
+*.exe
+
+# --- Python Environment ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+
+# --- System & Editors ---
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.clangd/
+compile_commands.json
+
+# --- VS Specific ---
+*.user
+*.workspace
+*.suo
+*.sln.docstates
